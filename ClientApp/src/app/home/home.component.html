@@ -1,0 +1,16 @@
+<div class="component">
+  <h1>Temperature Converter</h1>
+  <h5>Simple Angular Demo by Mike Burns</h5>
+  <br /><br />
+  <div class="content" role="main">
+    <p>
+      Enter value in the relevant box for Centigrade, Fahrenheit or Kelvin<br />
+      The other two boxes will show the conversions of the value you entered
+    </p>
+    <table>
+      <tr><td>Centigrade:&nbsp;</td><td><input name='centInput' type='number' [(ngModel)]='valCentigrade' (change)='ValueChanged("centigrade")'></td></tr>
+      <tr><td>Fahrenheit:&nbsp;</td><td><input type='number' [(ngModel)]='valFahrenheit' (change)='ValueChanged("fahrenheit")'></td></tr>
+      <tr><td>Kelvin:&nbsp;</td><td><input type='number' [(ngModel)]='valKelvin' (change)='ValueChanged("kelvin")'></td><td><div *ngIf="absZero" style="color: red">Absolute Zero reached</div></td></tr>
+    </table>
+  </div>
+</div>
