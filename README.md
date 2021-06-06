@@ -30,7 +30,7 @@ Windows .Net Core 5 Runtime Hosting Bundle - https://docs.microsoft.com/en-us/as
 # Build instructions
 
 In a Command Prompt, browse to <AppDir>\ClientApp
-Execute command "npm install" 
+Execute command "npm install --no-optional" 
 Open the project in Visual Studio and Build from the menu Build\Build Solution
 
 # Unit testing
